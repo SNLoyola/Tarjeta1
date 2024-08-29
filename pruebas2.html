@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Grid</title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <!-- <link rel="stylesheet" href="stylecards.css"> -->
+    <link rel="stylesheet" href="stylepruebas.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Scarti Shoes</a>
+            <a href="pruebas.html">Pruebas "acerca de nosotros" </a>
+            <a href="pruebas2.html">Pruebas2</a>
+            <i class='bx bxs-shopping-bags bx-md' ></i>
+        </nav>
+    </header>
+    <div>
+
+        <nav class="nav2"> 
+                <a href="">Zapatillas</a>
+                <a href="">Bolsos</a>
+                <a href="">Pelotas</a>
+                <a href="">Rodilleras</a>
+        </nav>
+
+    </div>
+
+    <main>
+        <div class="container">
+            <div class="card card-1" onclick="toggleCard(this)">
+                <div class="face face1">
+                    <div class="content">
+                        <div class="image-slider">
+                            <img src="Media/Zapatillas/Green Pine.jpg" alt="Descripción de la imagen">
+                            <img src="Media/Zapatillas/3B3E43E4-A33B-4CE8-90E0-191466844BB4.jpg" alt="Descripción de la imagen">
+                            <img src="Media/Zapatillas/IMG_1742.jpg" alt="Descripción de la imagen">
+                            <img src="Media/Zapatillas/IMG_0905.jpg" alt="Descripción de la imagen">
+                        </div>
+                        <button class="prev" onclick="prevImage(event)">&#10094;</button>
+                        <button class="next" onclick="nextImage(event)">&#10095;</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+   
+
+    <script src="scriptprueba2.js"></script>
+    <script src="scriptcards.js"></script>
+    <!-- <script src="scriptcards.js"></script> -->
+</body>
+</html>

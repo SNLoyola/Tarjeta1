@@ -1,0 +1,184 @@
+main {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    /* font-family: Arial, Helvetica, sans-serif; */
+}
+
+.container {
+    width: 1400px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(16, auto);
+    gap: 22px;
+    padding: 22px;
+    background-color: transparent;
+}
+
+.container .card {
+    position: relative;
+    cursor: pointer;
+    transition: .4s;
+}
+.card{
+    background-color: transparent;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    font-size: small;
+
+}
+.container .card .face {
+    width: 350px;
+    height: 200px;
+    transition: .4s;
+}
+
+.container .card .face.face1 {
+    position: relative;
+    z-index: 1;
+    transform: translateY(100px);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .card .face.face1 .content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .card .face.face1 .content img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container .card.active .face.face1 {
+    transform: translateY(0);
+     
+    inset: 0 0 60px #fff,
+    0 0 50px rgb(57, 103, 255),
+    -10px 0 80px rgb(245, 98, 191),
+    10px 0 80px rgb(251, 89, 194);
+    
+}
+
+.container .card .face.face2 {
+    position: relative;
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px rgba(0,0,0,.8);
+    transform: translateY(-100px);
+    color: #333;
+}
+
+.container .card.active .face.face2 {
+    transform: translateY(0);
+}
+
+.container .card .face.face2 .content p,
+.container .card .face.face2 .content a {
+    font-size: 10pt;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container .card .face.face2 .content a {
+    text-decoration: none;
+    color: black;
+    box-sizing: border-box;
+    outline: 1px dashed #333;
+    padding: 10px;
+    margin: 15px 0 0;
+    display: inline-block;
+}
+
+.container .card .face.face2 .content a:hover {
+    background: #333;
+    color: whitesmoke;
+    box-shadow: inset 0px 0px 10px rgba(0,0,0,0.5);
+}
+
+.content ul {
+    list-style-type: none;
+    align-content: left;
+    padding: 0;
+    margin: 0;
+}
+
+.content ul li {
+    margin-bottom: 5px;
+}
+
+.face2{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: medium;
+}
+
+.ul_scnd {
+    width: 100%;
+    display: flex; /* Hace que los elementos hijos se alineen en fila */
+    justify-content: space-between; /* Distribuye los elementos con espacio entre ellos */
+    padding: 0;
+    margin: 0;
+    list-style-type: none; /* Elimina los puntos de la lista */
+}
+
+.ul_scnd .list-group-item {
+    width: 48%; /* Ajusta el ancho de los elementos para que ocupen el 50% cada uno */
+    box-sizing: border-box; /* Asegura que padding y borders no afecten el width */
+     /* Centra el contenido del `li` */
+}
+
+
+.list-group {
+    display: flex;
+    flex-direction: column; /* Coloca los items uno debajo del otro */
+    align-items: center; /* Alinea los elementos al inicio del contenedor */
+    width: 100%; /* Asegura que el ul ocupe todo el ancho */
+    padding: 0;
+    margin: 0;
+}
+
+
+.item1, .item2 {
+    width: 100%; /* Ocupa todo el ancho disponible */
+}
+
+.item3, .item4 {
+    width: 50%; /* Ocupa la mitad del ancho */
+    display: inline-block; /* Permite que los items estén uno al lado del otro */
+    box-sizing: border-box; /* Asegura que padding/border no afecten el width */
+}
+
+.card-body {
+    display: flex;
+    justify-content: space-between; /* Espacio entre los enlaces */
+    width: 100%; /* Ocupa todo el ancho disponible */
+    margin-top: 20px; /* Espacio entre el ul y el card-body */
+}
+
+.card-body .card-link {
+    width: 48%; /* Ocupa el 50% del ancho menos un pequeño margen */
+    text-align: center; /* Centra el texto dentro de cada enlace */
+    display: inline-block; /* Asegura que estén uno al lado del otro */
+    box-sizing: border-box; /* Asegura que padding/border no afecten el width */
+    margin: 0;
+}
+
+ /* */ 

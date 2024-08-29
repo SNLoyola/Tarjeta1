@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pruebas</title>
+    <link rel="stylesheet" href="stylecards.css">
+    <!-- <link rel="stylesheet" href="stylepruebas.css"> -->
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+ <header>
+        <nav>
+            <a href="index.html">Scarti Shoes</a>
+            <a href="pruebas.html">Pruebas "acerca de nosotros" </a>
+            <a href="pruebas2.html">Pruebas2</a>
+            <i class='bx bxs-shopping-bags bx-md' ></i>
+        </nav>
+    </header>
+    <div>
+
+        <nav class="nav2"> 
+                <a href="">Zapatillas</a>
+                <a href="">Bolsos</a>
+                <a href="">Pelotas</a>
+                <a href="">Rodilleras</a>
+        </nav>
+
+    </div>
+<body>
+    <main>
+        <div class="container">
+
+            <div class="card card-1" onclick="toggleCard(this)">
+                <div class="face face1">
+                    <div class="content">
+                        <img src="Media/Zapatillas/Green Pine.jpg" alt="Descripción de la imagen">
+                    </div>
+                </div>
+                <div class="face face2">
+                    <div class="content">
+                        <ul>
+                            <li>Precio: $50.000 </li>
+                            <li>Talles: M</li>
+                            <li>Colores: 
+                                <span class="circulo circulo-rojo"></span> 
+                                <span class="circulo circulo-azul"></span> 
+                                <span class="circulo circulo-negro"></span> 
+                            </li>
+                            <a href="pruebas2.html">Ver</a>
+                            <a href="#">Añadir al carrito</a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card card-2" onclick="toggleCard(this)">
+                <div class="face face1">
+                    <div class="content">
+                        <img src="Media/Zapatillas/Green Pine.jpg" alt="Descripción de la imagen">
+                    </div>
+                </div>
+                <div class="face face2">
+                    <div class="content">
+                        <p>Description of Face 2</p>
+                        <a href="#">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card card-3" onclick="toggleCard(this)">
+                <div class="face face1">
+                    <div class="content">
+                        <img src="Media/Zapatillas/Green Pine.jpg" alt="Descripción de la imagen">
+                    </div>
+                </div>
+                <div class="face face2">
+                    <div class="content">
+                        <ul>
+                            <li>Precio: $50.000 </li>
+                            <li>Talles: M</li>
+                            <li>Colores: 
+                                <span class="circulo circulo-rojo"></span> 
+                                <span class="circulo circulo-azul"></span> 
+                                <span class="circulo circulo-negro"></span> 
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" onclick="toggleCard(this)">
+                <div class="face face1">
+                    <div class="content">
+                        <img src="Media/Zapatillas/Green Pine.jpg" alt="Descripción de la imagen">
+                    </div>
+                </div>
+                <div class="face face2">
+                    <div class="content">
+                        <p>Description of Face 2</p>
+                        <a href="#">Añadir al carrito</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" onclick="toggleCard(this)">
+                <div class="face face1">
+                    <div class="content">
+                        <img src="Media/Zapatillas/1CC7EFD4-E675-4A8A-B880-42266B00D8D6.jpg" alt="Descripción de la imagen">
+                    </div>
+                </div>
+                <div class="face face2">
+                    <div class="content">
+                        <ul>
+                            <li>Precio: $50.000 </li>
+                            <li>Talles: M</li>
+                            <li>Colores: 
+                                <span class="circulo circulo-rojo"></span> 
+                                <span class="circulo circulo-azul"></span> 
+                                <span class="circulo circulo-negro"></span> 
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" onclick="toggleCard(this)">
+                <div class="face face1">
+                    <div class="content">
+                        <img src="Media/Zapatillas/3B3E43E4-A33B-4CE8-90E0-191466844BB4.jpg" alt="Descripción de la imagen">
+                    </div>
+                </div>
+                <div class="face face2">
+                    <div class="content">
+                        <p>Description of Face 2</p>
+                        <a href="#">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Repeat the .card div 62 more times to make a total of 64 cards -->
+        </div>
+    </main>
+
+
+</body>
+<script src="scriptcards.js"></script>
+</html>
